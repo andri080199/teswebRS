@@ -1936,16 +1936,6 @@ input:checked + .toggle-bg {
      object-fit: cover;
 }
 
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
-}
-
-.object-right-bottom {
-  -o-object-position: right bottom;
-     object-position: right bottom;
-}
-
 .object-center {
   -o-object-position: center;
      object-position: center;
