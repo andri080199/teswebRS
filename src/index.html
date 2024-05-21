@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body class="font-roboto bg-teal-100">
+    
+<!-- Navbar -->
+<header class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600 opacity-90">
+<nav class="">
+    <!-- <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+    <a href="index.html" class="flex space-x-3 rtl:space-x-reverse">
+        <img src="/assets/img/LogoRsarFix.svg" class="w-28  h-8 ml-auto lg:w-36 lg:h-12" alt="RsAR Logo">
+        
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <button type="button" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center">Hubungi Kami</button>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div> -->
+<!-- Navbar -->
+<div class="fixed top-0 z-50 w-full bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-2">
+            <div class="flex-shrink-0">
+                <a href="#" class="text-lg font-bold text-gray-800">
+                    <img src="/assets/img/LogoRsarFix.svg" class="w-28  h-8 ml-auto lg:w-36 lg:h-12" alt="RsAR Logo">
+                </a>
+            </div>
+            <div class="hidden md:block">
+                <a href="#" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">BERANDA</a>
+                <div class="relative inline-block dropdown">
+                    <a href="#" id="profile" class="flex items-center text-teal-600 hover:text-gray-800 px-3 font-semibold">PROFIL
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                    </a>
+                    <div id="profileDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-xl dropdown-menu">                   
+                      <a href="sejarah.html" class="block px-4 py-2 text-gray-800 rounded-lg hover:bg-teal-200">Sejarah</a>
+                      <a href="visimisi.html" class="block px-4 py-2 text-gray-800 rounded-lg hover:bg-teal-200">Visi & Misi</a>  
+                    </div>
+                </div>
+                <a href="#mcu" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">Paket MCU</a>
+                <a href="#listdokter" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">Cari Dokter</a>
+                <a href="#phoneNumber" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">KONTAK</a>
+              </div>
+            <div class="-mr-2 flex md:hidden">
+                <!-- Hamburger menu button -->
+                <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <!-- <div id="mobile-menu" class="md:hidden bg-white hidden">
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Beranda</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Profil</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Services</a>
+        <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Contact</a>
+    </div> -->
+
+    <div id="mobile-menu" class="md:hidden bg-teal-100 hidden px-4 py-4">
+        <a href="#" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Beranda</a>
+        <div class="relative">
+          <a href="#" id="mobileProfile" class="flex py-2 px-2 items-center text-gray-600 hover:bg-teal-400 rounded-xl">Profil
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </a>
+          <div id="mobileProfileDropdown" class="hidden">
+            <a href="sejarah.html" class="block px-4 py-1 text-sm text-gray-800 hover:bg-teal-400 rounded-xl">Sejarah</a>
+            <a href="visimisi.html" class="block px-4 py-1 text-sm text-gray-800 hover:bg-teal-400 rounded-xl">Visi & Misi</a>
+          </div>
+        </div>
+        <a href="#" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Galeri</a>
+        <a href="#" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Kontak</a>
+      </div>
+
+  </nav>
+</header>
+<!-- mobile nav -->
+  <div class="fixed bottom-0 left-0 z-50 w-full h-14 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 md:hidden">
+    <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+        <a href="index.html" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+            </svg>
+            <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Beranda</span>
+        </a>
+        <a href="#listdokter" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <img src="/assets/img/doctor.png" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+            <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Dokter</span>
+        </a>
+        
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <img src="/assets/img/ambulance.png" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+            <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Ambulance</span>
+        </button>
+        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+            <!-- <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+            </svg> -->
+            <img src="/assets/img/whatsapp.svg" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+            <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">WhatsApp</span>
+        </button>
+    </div>
+</div>
+
+  <!-- hero section -->
+  <section class="mt-12 md:flex shadow-md bg-cover bg-center" style="background-image: url(/assets/img/herobackground.jpg)">
+    <!-- Left side (text) -->
+    <div class="md:flex lg:flex lg:mx-auto lg:px-64 justify-center md:pb-8 md:mt-20">
+    <div class="md:w-3/4 mt-8 pt-4 lg:mt-14 px-8 lg:pt-14">
+        <h1 class="text- md:text-4xl font-bold mb-1 text-teal-600 text-left lg:text-5xl tracking-widest">Kesembuhan Anda Adalah Prioritas Kami</h1>
+        <p class="text-xs md:text-sm lg:text-lg text-slate-800 tracking-widest">"Berkomitmen memberikan perawatan terbaik untuk kesembuhan Anda. Kami siap memberikan layanan kesehatan yang penuh perhatian dan berkualitas."</p>
+        <!-- Tambahkan elemen HTML lainnya sesuai kebutuhan -->
+    </div>
+
+    <!-- Right side (image) -->
+    <div class="mt-0 md:mt-0 w-475 h-290 flex justify-end">
+        <img class=" object-contain w-32 h-auto md:w-full md:h-max" src="/assets/img/docternobg.png" alt="docter">
+    </div>
+</div>
+
+</section>
+
+<!-- container layanan -->
+<div class="container mx-auto mb-16 px-4 md:-mt-14  md:mx-8 lg:-mt-24 -mt-10 z-20 md:px-12 md:pt-4 lg:px-64 ">
+    <div class="bg-green-100 px-4 pb-4 lg:mx-32 md:mx-8 z-20 rounded-2xl border-green-300  border-2 items-center justify-center shadow-2xl shadow-green-300">
+        <div class="px-1">
+            <h1 class="font-semibold text-teal-700 text-xl pt-4 tracking-wider">Pusat Layanan</h1>
+            <p class="text-slate-800 text-xs md:text-lg"> Dengan tim medis yang berpengalaman dan fasilitas modern, kami siap memberikan layanan terbaik untuk memastikan Anda mendapatkan perawatan yang komprehensif dan efektif.</p>
+        </div>
+<!-- isi card -->
+<div class="flex flex-nowrap lg:flex-wrap pt-6 px-6 overflow-x-auto space-x-8 lg:items-center lg:justify-center">
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-teal-200 ">
+            <img src="/assets/layananpoli/saraf.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Saraf</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full bg-white">
+            <img src="/assets/layananpoli/penyakitdalam.png"  alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli PDL</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/mata.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Mata</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/bedah.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Bedah</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/ibuanak.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Ibu&Anak</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/kulit.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Kulit&Kelamin</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/gigi.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Gigi</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/hd.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Hemodialisa</p>
+        </div>
+
+        <div class="flex flex-col items-center lg:mt-8">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/obgyn.png" alt="Random image" class="object-contain rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Obgyn</p>
+        </div>
+
+        <div class="flex flex-col items-center lg:mt-8">
+            <div class="w-16 h-16 rounded-full">
+            <img src="/assets/layananpoli/geriatri.png" alt="Random image" class="object-cover rounded-full border-slate-900 hover:opacity-80" />
+        </div>
+            <p class="text-sm text-center pt-3">Poli Geriatri</p>
+        </div>
+
+    
+
+  </div>
+    </div>
+</div>
+<!-- card MCU -->
+<section class=" bg-teal-100 pb-12">
+
+
+
+<div id="mcu" class="lg:ml-48 md:ml-0 md:mt-8 mb-8">
+    
+    <h1 class="px-8 mb-4 md:text-2xl">
+        <i class="fas fa-star text-yellow-300 font-semibold"></i>
+        Paket Medical Check-Up 
+    </h1>
+</div>
+
+<div class="flex flex-wrap justify-center">
+    <!-- paket silver -->
+<div class="mx-8 mb-4 max-w-sm lg:w-72 lg:mb-0 lg:pb-2 bg-white border border-teal-300 rounded-2xl hover:border-teal-400 hover:border-2 hover:shadow-2xl hover:shadow-teal-400 hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+    <a href="#">
+        <img class="rounded-t-2xl hover:opacity-80" src="/assets/img/mcu1.jpg" alt="" />
+    </a>
+    <div class="px-4 py-2 ">
+            <h5 class=" text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Paket Silver</h5>
+        <p class=" font-normal text-gray-700 dark:text-gray-400 hidden">Rp. 880.500,-</p>
+        <p class="text-gray-600 text-xs mb-3">8 Tes *</p>
+        <div class="flex justify-between md:items-center mt-14">
+        <a href="https://wa.me/6281271294991" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-400 rounded-lg hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-teal-700 hover:scale-[1.08] focus:scale-[1.08] active:scale-100">
+            Pesan
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+        <button data-modal-show="paket-silver" class="inline-flex font-light mt-2 items-center text-teal-400 hover:underline cursor-pointer" type="button">
+            Selengkapnya
+            <svg class="w-3 h-3 ms-1 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+            </svg>
+        </button>
+    </div>
+    </div>
+</div>
+
+<!-- modal paket silver-->
+<div id="paket-silver" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 items-center justify-center overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <!-- < class="relative w-fit max-h-full"> -->
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-2xl shadow-2xl">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b-4 border-teal-400 rounded-t dark:border-gray-600">
+                <h1 class="text-xl font-medium text-gray-900 dark:text-white">
+                    <i class="fas fa-star text-yellow-300 font-semibold"></i>
+                    Paket Silver
+                </h1>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="paket-silver">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-nowrap">
+            <div class="p-4 md:p-5 space-y-4">
+                <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                    <li class="p-1 flex items-center">
+                        <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>Administrasi MCU
+                        </li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Konsul Dokter Umum</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Pemeriksaan Darah</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Tes Buta Warna</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Rontgen Dada/PA</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Fungsi Ginjal</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Fungsi Hati</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Tes Urine</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-gray-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>EKG</li>
+                </ul>          
+            </div>
+            <div class="p-4 md:p-5 space-y-4">
+                <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                    <li class="p-1 flex items-center">
+                        <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>Cek Gula Darah Sewaktu
+                        </li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Asam Urat</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Kolestrol</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Hepatitis B</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Golongan Darah</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Konsul Dokter Spesialis PDL</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Konsul Dokter Spesialis THT-KL</li>
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Konsul Dokter Gigi</li>
+                </ul>          
+            </div>
+        </div>
+            <!-- Modal footer -->
+            <div class="flex items-center justify-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="paket-silver" type="button" class="text-white bg-blue-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-5 py-2.5 text-center">Pesan</button>
+            </div>
+        </div>
+</div>
+
+
+<!-- paket gold -->
+<div class="mx-8 mb-4 max-w-sm lg:w-72 lg:mb-0 lg:mx-0 bg-white border border-gray-200 hover:border-teal-400 hover:border-2 rounded-2xl hover:shadow-2xl hover:shadow-teal-400 dark:bg-gray-800 dark:border-gray-700 hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+    <a href="#">
+        <img class="rounded-t-2xl hover:opacity-80" src="/assets/img/mcu1.jpg" alt="" />
+    </a>
+    <div class="px-4 py-2">
+            <h5 class=" text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Paket Gold</h5>
+        <p class=" font-normal text-gray-700 dark:text-gray-400 hidden">Rp. 1.090.500,-</p>
+        <p class="text-gray-600 text-xs mb-3">11 Tes *</p>
+        <div class="flex justify-between items-center mt-14">
+        <a href="https://wa.me/6281271294991" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-400 rounded-lg hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-teal-400 hover:scale-[1.08] focus:scale-[1.08] active:scale-100">
+            Pesan
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+        <button data-modal-show="paket-gold" class="inline-flex font-light mt-2 items-center text-teal-400 hover:underline cursor-pointer" type="button">
+            Selengkapnya
+            <svg class="w-3 h-3 ms-1 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+            </svg>
+        </button>
+    </div>
+    </div>
+</div>
+
+<!-- modal paket gold-->
+<div id="paket-gold" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 items-center justify-center overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <!-- < class="relative w-fit max-h-full"> -->
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-2xl shadow-2xl">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b-4 border-teal-400 rounded-t dark:border-gray-600">
+                <h1 class="text-xl font-medium text-gray-900 dark:text-white">
+                    <i class="fas fa-star text-yellow-300 font-semibold"></i>
+                    Paket Gold
+                </h1>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="paket-gold">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-nowrap">
+                <div class="p-4 md:p-5 space-y-4">
+                    <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Administrasi MCU
+                            </li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Umum</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Pemeriksaan Darah</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Tes Buta Warna</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Rontgen Dada/PA</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Fungsi Ginjal</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Fungsi Hati</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Tes Urine</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>EKG</li>
+                    </ul>          
+                </div>
+                <div class="p-4 md:p-5 space-y-4">
+                    <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Gula Darah Sewaktu
+                            </li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Asam Urat</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Kolestrol</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Hepatitis B</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Golongan Darah</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Spesialis PDL</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Spesialis THT-KL</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-slate-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Gigi</li>
+                    </ul>          
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center justify-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="paket-gold" type="button" class="text-white bg-blue-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-5 py-2.5 text-center">Pesan</button>
+            </div>
+        </div>
+</div>
+
+<!-- paket platinum -->
+<div class="mx-8  max-w-sm lg:w-72 bg-white border hover:border-teal-400 hover:border-2 rounded-2xl hover:shadow-2xl hover:shadow-teal-400 dark:bg-gray-800 dark:border-gray-700 hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+    <a href="#">
+        <img class="rounded-t-2xl hover:opacity-80" src="/assets/img/mcu1.jpg" alt="" />
+    </a>
+    <div class="px-4 py-2 ">
+            <h5 class=" text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Paket Platinum</h5>
+        <p class=" font-normal text-gray-700 dark:text-gray-400 hidden">Rp. 1.620.500,-</p>
+        <p class="text-gray-600 text-xs mb-3">17 Tes *</p>
+        <div class="flex justify-between items-center mt-14">
+        <a href="https://wa.me/6281271294991" target="_blank" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-400 rounded-lg hover:bg-teal-500 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hover:scale-[1.08] focus:scale-[1.08] active:scale-100">
+            Pesan
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+        <button data-modal-show="paket-platinum" class="inline-flex font-light mt-2 items-center text-teal-400 hover:underline cursor-pointer" type="button">
+            Selengkapnya
+            <svg class="w-3 h-3 ms-1 rtl:rotate-[270deg]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
+            </svg>
+        </button>
+    </div>
+    </div>
+</div>
+
+<!-- modal paket platinum -->
+<div id="paket-platinum" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 items-center justify-center overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <!-- < class="relative w-fit max-h-full"> -->
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-2xl shadow-2xl">
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b-4 border-teal-400 rounded-t dark:border-gray-600">
+                <h1 class="text-xl font-medium text-gray-900 dark:text-white">
+                    <i class="fas fa-star text-yellow-300 font-semibold"></i>
+                    Paket Platinum
+                </h1>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="paket-platinum">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-nowrap">
+                <div class="p-4 md:p-5 space-y-4">
+                    <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Administrasi MCU
+                            </li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Umum</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Pemeriksaan Darah</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Tes Buta Warna</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Rontgen Dada/PA</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Fungsi Ginjal</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Fungsi Hati</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Tes Urine</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>EKG</li>
+                    </ul>          
+                </div>
+                <div class="p-4 md:p-5 space-y-4">
+                    <ul class="text-xs max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
+                        <li class="p-1 flex items-center">
+                            <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                             </svg>Cek Gula Darah Sewaktu
+                            </li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Asam Urat</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Kolestrol</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Hepatitis B</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Cek Golongan Darah</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Spesialis PDL</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Spesialis THT-KL</li>
+                            <li class="p-1 flex items-center">
+                                <svg class="w-3 h-3 me-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                 </svg>Konsul Dokter Gigi</li>
+                    </ul>          
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center justify-center p-4 md:p-5 border-t border-gray-200 rounded-b">
+                <button data-modal-hide="paket-platinum" type="button" class="text-white bg-blue-700 hover:bg-teal-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-sm px-5 py-2.5 text-center">Pesan</button>
+            </div>
+        </div>
+</div>
+
+</div>    
+</section>
+
+<!-- Gallery -->
+<section class="shadow-md bg-center bg-cover bg-opacity-90" style="background-image: url(/assets/img/bgcool1.jpg)">
+
+
+    <div id="custom-controls-gallery" class="relative w-full pb-24 lg:pt-16 " data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden lg:rounded-2xl md:pt-16 md:h-96 md:w-3/4 lg:w-1/2 md:rounded-2xl md:items-center md:justify-center mx-auto ">
+             <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/img/galerirsar1.jpeg" class="absolute inset-0 w-full h-full rounded-lg object-cover " alt="">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="/assets/img/galerirsar2.jpeg" class="absolute inset-0 w-full h-full rounded-lg object-cover" alt="">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="/assets/img/galerisrsar3.jpeg" class="absolute inset-0 w-full h-full rounded-lg object-cover" alt="">
+            </div>
+            <!-- Item 4 -->
+            
+        </div>
+        <div class="flex justify-center items-center pt-4">
+            <button type="button" class="flex justify-center items-center me-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                    <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="flex justify-center items-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="text-gray-400 hover:text-gray-900 dark:hover:text-white group-focus:text-gray-900 dark:group-focus:text-white">
+                    <svg class="rtl:rotate-180 w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    
+</section>
+
+<!-- list dokter -->
+<section id="listdokter">
+
+    <div class="mx-auto flex lg:px-40 mb-8 pt-20">
+        
+        <div class="flex flex-wrap items-center justify-center gap-8">
+            <div class="mb-4 block w-full ml-11 lg:ml-11">
+                <h1 class="font-bold text-teal-600 tracking-wide text-xl md:pl-12">
+                    Rekomendasi Dokter
+                </h1>
+            </div>     
+            
+           <!-- Card 1 -->
+           <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400 hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets/img_dokter/dr.ari.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs lg:text-sm font-semibold">dr. Ari Fibrianto, Sp.A</h2>
+                    <p class="text-xs lg:text-sm text-gray-500">Spesialis Ibu & Anak</p>
+                </div>
+            </div>
+            <div>
+                <div class="px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                    <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                    <ul>
+                        <li class="flex justify-between border-b-2">
+                            <span>Senin</span>
+                            <span class="ml-auto">08.00 - 09.00</span>
+                        </li>
+                        <li class="flex justify-between border-b-2">
+                            <span>Rabu</span>
+                            <span class="ml-auto">08.00 - 09.00</span>
+                        </li>
+                        <li class="flex justify-between border-b-2">
+                            <span>Kamis</span>
+                            <span class="ml-auto">08.00 - 09.00</span>
+                        </li>
+                    </ul>
+                </div>       
+                <div class="mt-4 mb-1 mx-4 px-2">
+                    <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                    <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+                </div>           
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400  hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets/img_dokter/dr.boby.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs lg:text-xs font-semibold">dr. Boby Febriansyah, Sp.B</h2>
+                    <p class="text-xs lg:text-xs text-gray-500">Spesialis Bedah</p>
+                </div>
+            </div>
+            <div class="px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                <ul>
+                    <li class="flex justify-between border-b-2">
+                        <span>Senin</span>
+                        <span class="ml-auto">12.00 - 15.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Selasa</span>
+                        <span class="ml-auto">12.00 - 15.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Kamis</span>
+                        <span class="ml-auto">12.00 - 15.00</span>
+                    </li>   
+                    <li class="flex justify-between border-b-2">
+                        <span>Jum'at</span>
+                        <span class="ml-auto">10.00 - 12.00</span>
+                    </li>                 
+                </ul>
+            </div>
+            <div class="mt-4 mb-1 ml-2 px-4">
+                <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+            </div>               
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400  hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets//img_dokter/dr.riris.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs font-semibold">dr. Reysginawathie, Sp.PD</h2>
+                    <p class="text-xs text-gray-500">Spesialis Penyakit Dalam</p>
+                </div>
+            </div>
+            <div class=" px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                <ul>
+                    <li class="flex justify-between border-b-2">
+                        <span>Senin</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Selasa</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Rabu</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Kamis</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Jumat</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 mb-1 ml-2 px-4">
+                <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400  hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets//img_dokter/dr.reti.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs font-semibold">dr. Reti Anggraeni, Sp.D.V</h2>
+                    <p class="text-xs text-gray-500">Spesialis Kulit Kelamin</p>
+                </div>
+            </div>
+            <div class=" px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                <ul>
+                    <li class="flex justify-between border-b-2">
+                        <span>Senin</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Selasa</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Rabu</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Kamis</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Jumat</span>
+                        <span class="ml-auto">08.00 - 10.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 mb-1 ml-2 px-4">
+                <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400  hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets//img_dokter/dr.yesi.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs font-semibold">dr. Yesi Sefriani, Sp.A</h2>
+                    <p class="text-xs text-gray-500">Spesialis Kulit Kelamin</p>
+                </div>
+            </div>
+            <div class=" px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                <ul>
+                    <li class="flex justify-between border-b-2">
+                        <span>Selasa</span>
+                        <span class="ml-auto">14.00 - 16.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Kamis</span>
+                        <span class="ml-auto">15.00 - 17.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Jumat</span>
+                        <span class="ml-auto">14.00 - 16.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 mb-1 ml-2 px-4">
+                <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="p-2 w-72 h-80 bg-white border-2 border-teal-400 rounded-2xl shadow-2xl shadow-teal-400  hover:scale-[1.02] focus:scale-[1.02] active:scale-100">
+            <div class="flex items-center mb-4 px-2">
+                <img src="/assets//img_dokter/dr.rivai.jpeg" alt="Foto Dokter" class="w-16 h-16 rounded-full object-cover mr-4">
+                <div>
+                    <h2 class="text-xs font-semibold">dr. Rivai Baharuddin Yudha Putra, Sp.OG</h2>
+                    <p class="text-xs text-gray-500">Spesialis Obgyn</p>
+                </div>
+            </div>
+            <div class=" px-4 md:px-8 lg:mx-2 h-40 text-sm">
+                <h3 class="text-md font-semibold mb-2">Jadwal Praktek</h3>
+                <ul>
+                    <li class="flex justify-between border-b-2">
+                        <span>Senin</span>
+                        <span class="ml-auto">10.00 - 12.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Selasa</span>
+                        <span class="ml-auto">09.00 - 11.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Rabu</span>
+                        <span class="ml-auto">09.00 - 11.00</span>
+                    </li>
+                    <li class="flex justify-between border-b-2">
+                        <span>Jumat</span>
+                        <span class="ml-auto">09.00 - 11.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-4 mb-1 ml-2 px-4">
+                <p class="text-xs text-red-500">*jadwal sewaktu-waktu dapat berubah</p>
+                <p class="text-xs text-gray-600">info lebih lanjut hubungi 0711-581976</p>
+            </div>
+        </div>
+        <div class="flex mb-24 mx-auto items-center justify-center lg:pt-4">
+            <a href="rekomendasidokter.html" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-300 to-teal-500 group-hover:from-cyan-300 group-hover:to-teal-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                Lihat Semua
+                </span>
+                </a>
+        </div>
+    </div>
+    
+</section>
+
+
+<!-- footer -->
+<footer class="bg-teal-600 dark:bg-gray-900 mb-14 md:mb-0">
+    
+    <div class="mx-auto w-full lg:max-w-screen-xl lg:py-8">
+        <!-- layanan Telepon -->
+        <div class="lg:px-52 py-6 shadow-md bg-center bg-cover lg:items-center lg:rounded-2xl mb-10" style="background-image: url(/assets/img/bgteleponsection.jpg)">
+            <div class="lg:flex lg:items-center lg:justify-center mb-8">
+            <div class="items-center justify-center rounded-lg bg-white opacity-80 px-4 py-2 w-fit mx-auto">
+                <h1 class="text-center font-bold text-teal-700">RS Ar-Royyan</h1>
+                <h1 class="text-center font-bold text-teal-700">APPOINTMENT CENTER</h1>
+            </div>
+                <div class="flex w-fit mx-auto gap-4 rounded-full items-center justify-center p-4 bg-teal-300 my-2 border-2 border-teal-400">
+                    <div class="w-6 h-6">
+                    <img src="/assets/img/telephone-svgrepo-com.svg" class="object-cover justify-between" alt="">
+                    </img>
+                </div>
+                    <span class="text-lg text-teal-700 font-extrabold" id="phoneNumber">0711-581976</span>
+                    <button id="copyButton"
+                            class="bg-teal-500 hover:opacity-50 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
+        
+                </div>        
+        </div>
+        <div class="bg-white opacity-90 w-fit justify-center items-center mx-auto px-2 rounded-lg">
+            <p class="text-xs text-gray-700 text-center mt-2 lg:block">Jam Operasional Layanan Telepon 06.00-22.00 WIB</p>
+        </div>
+        </div>
+        <div class="md:flex md:justify-between md:px-12 lg:px-0 p-6">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="/assets/img/LOGOPUTIH240x60px.svg" class="h-12 me-3" alt="RSAR Logo" />
+              </a>
+              <div class="md:w-80">
+                <h1 class="text-white pt-4">Jl. Indralaya Raya, Timbangan, Kecamatan Indralaya Utara, Kabupaten Ogan Ilir, Sumatera Selatan 30862</h1>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div class="text-white">
+                  <h2 class="mb-6 text-sm font-semibold uppercase text-white">Layanan</h2>
+                  <ul class="text-white dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-teal-300">IGD 24 Jam</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline hover:text-teal-300">POLI</a>
+                      </li>
+                      
+                  </ul>
+                  
+              </div>
+              
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
+                  <ul class="text-white dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-teal-300">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline hover:text-teal-300">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+                  
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Bergabung</h2>
+                <ul class="text-white dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline hover:text-teal-300">Karir</a>
+                    </li>
+                </ul>
+            </div>
+              <!-- sosial media -->
+              <div class="flex flex-wrap gap-6  ">
+                <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer">
+                    
+                <a href="https://www.facebook.com/rsarroyyan" target="_blank" class="text-blue-600 dark:hover:text-white text-center items-center justify-center object-cover">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                          <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                      </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+            </div> 
+            <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer"> 
+                <a href="https://wa.me/6281271294991" target="_blank" class="text-green-400  items-center justify-center object-cover">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"> <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    <span class="sr-only">WhatsApp</span>
+                </a>   
+            </div>   
+            <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer"> 
+                <a href="https://www.instagram.com/rsarroyyan" target="_blank" class="text-gray-600 items-center justify-center object-cover">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.243 1.318 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.243 1.256-3.608 1.318-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.243-1.318-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.343-2.633 1.318-3.608.975-.975 2.243-1.256 3.608-1.318 1.266-.058 1.646-.07 4.85-.07m0-2.163c-3.259 0-3.667.012-4.947.072-1.306.062-2.781.334-3.789 1.342C2.499 3.581 2.227 5.056 2.165 6.362 2.105 7.642 2.093 8.05 2.093 11.31s.012 3.667.072 4.947c.062 1.306.334 2.781 1.342 3.789.997.998 2.471 1.28 3.789 1.342 1.28.06 1.688.072 4.947.072s3.667-.012 4.947-.072c1.306-.062 2.781-.334 3.789-1.342.998-.997 1.28-2.471 1.342-3.789.06-1.28.072-1.688.072-4.947s-.012-3.667-.072-4.947c-.062-1.306-.334-2.781-1.342-3.789-.997-.998-2.471-1.28-3.789-1.342-1.28-.06-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.154a3.992 3.992 0 1 1 0-7.984 3.992 3.992 0 0 1 0 7.984zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+                  </svg>
+                  <span class="sr-only">Instagram</span>
+                </a>   
+              </div>                    
+            </div>
+          </div>
+      </div>
+      <hr class="my-6 border-white sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="mx-auto items-center justify-center text-center pb-6 md:pb-0">
+        <span class="text-sm text-white dark:text-gray-400">© 2024 <a href="#" class="hover:underline">RS Ar-Royyan</a>. All Rights Reserved.
+        </span>
+        
+    </div>    
+    </div>
+    
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

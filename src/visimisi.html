@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body class="font-roboto bg-teal-100">
+
+
+<!-- Navbar -->
+<!-- Navbar -->
+<header class="bg-white dark:bg-gray-900 fixed w-full z-50 top-0 start-0 border-b border-gray-200 dark:border-gray-600 opacity-90">
+    <nav class="">
+        <!-- <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+        <a href="index.html" class="flex space-x-3 rtl:space-x-reverse">
+            <img src="/assets/img/LogoRsarFix.svg" class="w-28  h-8 ml-auto lg:w-36 lg:h-12" alt="RsAR Logo">
+            
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" class="text-white bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center">Hubungi Kami</button>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+            </li>
+            <li>
+              <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div> -->
+    <!-- Navbar -->
+    <div class="fixed top-0 z-50 w-full bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-2">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-lg font-bold text-gray-800">
+                        <img src="/assets/img/LogoRsarFix.svg" class="w-28  h-8 ml-auto lg:w-36 lg:h-12" alt="RsAR Logo">
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">BERANDA</a>
+                    <div class="relative inline-block dropdown">
+                        <a href="#" id="profile" class="flex items-center text-teal-600 hover:text-gray-800 px-3 font-semibold">PROFIL
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                              </svg>
+                        </a>
+                        <div id="profileDropdown" class="absolute hidden w-48 bg-white rounded-lg shadow-xl dropdown-menu">                   
+                          <a href="sejarah.html" class="block px-4 py-2 text-gray-800 rounded-lg hover:bg-teal-200">Sejarah</a>
+                          <a href="visimisi.html" class="block px-4 py-2 text-gray-800 rounded-lg hover:bg-teal-200">Visi & Misi</a>  
+                        </div>
+                    </div>
+                    <a href="#mcu" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">Paket MCU</a>
+                    <a href="#listdokter" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">Cari Dokter</a>
+                    <a href="#phoneNumber" class="text-teal-600 hover:text-gray-800 px-3 font-semibold">KONTAK</a>
+                  </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Hamburger menu button -->
+                    <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-gray-800 focus:outline-none">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <!-- <div id="mobile-menu" class="md:hidden bg-white hidden">
+            <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Beranda</a>
+            <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Profil</a>
+            <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Services</a>
+            <a href="#" class="block py-2 px-4 text-gray-600 hover:text-gray-800">Contact</a>
+        </div> -->
+    
+        <div id="mobile-menu" class="md:hidden bg-teal-100 hidden px-4 py-4">
+            <a href="index.html" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Beranda</a>
+            <div class="relative">
+              <a href="#" id="mobileProfile" class="flex py-2 px-2 items-center text-gray-600 hover:bg-teal-400 rounded-xl">Profil
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </a>
+              <div id="mobileProfileDropdown" class="hidden">
+                <a href="sejarah.html" class="block px-4 py-1 text-sm text-gray-800 hover:bg-teal-400 rounded-xl">Sejarah</a>
+                <a href="visimisi.html" class="block px-4 py-1 text-sm text-gray-800 hover:bg-teal-400 rounded-xl">Visi & Misi</a>
+              </div>
+            </div>
+            <a href="#" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Galeri</a>
+            <a href="#" class="block py-2 px-2 text-gray-600 hover:bg-teal-400 rounded-xl">Kontak</a>
+          </div>
+    
+      </nav>
+    </header>
+    <!-- mobile nav -->
+      <div class="fixed bottom-0 left-0 z-50 w-full h-14 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600 md:hidden">
+        <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+            <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                </svg>
+                <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Beranda</span>
+            </button>
+            <a href="index.html#listdokter" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <!-- <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2ZM12 8C10.1146 8 8.5 6.38543 8.5 4.5C8.5 2.61457 10.1146 1 12 1C13.8854 1 15.5 2.61457 15.5 4.5C15.5 6.38543 13.8854 8 12 8ZM7 8C5.89543 8 5 8.89543 5 10C5 11.1046 5.89543 12 7 12C8.10457 12 9 11.1046 9 10C9 8.89543 8.10457 8 7 8ZM5 14C3.34315 14 2 15.3431 2 17V20C2 21.1046 2.89543 22 4 22H20C21.1046 22 22 21.1046 22 20V17C22 15.3431 20.6569 14 19 14H17C15.8954 14 15 14.8954 15 16V20H9V16C9 14.8954 8.10457 14 7 14H5ZM12 14C10.3431 14 9 15.3431 9 17V20H15V17C15 15.3431 13.6569 14 12 14Z"/>
+                </svg> -->
+                <img src="/assets/img/doctor.png" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+                <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Dokter</span>
+            </a>
+            
+            <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <img src="/assets/img/ambulance.png" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+                <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">Ambulance</span>
+            </button>
+            <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                <!-- <svg class="w-5 h-5 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z"/>
+                </svg> -->
+                <img src="/assets/img/whatsapp.svg" class="w-5 h-5 mb-1 group-hover:text-teal-400 group-hover:scale-125" alt="">
+                <span class="text-xs text-gray-500 dark:text-gray-400 group-hover:text-teal-400 group-hover:scale-125 dark:group-hover:text-blue-500">WhatsApp</span>
+            </button>
+        </div>
+    </div>
+<!-- Breadcrumb -->
+
+<section class="bg-teal-300 pb-8">
+    <h1 class="flex pt-24 items-center justify-center text-3xl">Visi & Misi</h1>
+<nav class="flex px-5 py-3 items-center justify-center text-gray-700  rounded-lg " aria-label="Breadcrumb">  
+    <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+      <li class="inline-flex items-center">
+        <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-teal-400 dark:text-gray-400 dark:hover:text-white">
+          <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+          </svg>
+          Beranda
+        </a>
+      </li>
+      <li>
+        <div class="flex items-center">
+          <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <a href="#" class="ms-1 text-sm font-medium text-gray-700 hover:text-teal-400 md:ms-2 dark:text-gray-400 dark:hover:text-white">Profil</a>
+        </div>
+      </li>
+      <li aria-current="page">
+        <div class="flex items-center">
+          <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Visi & Misi</span>
+        </div>
+      </li>
+    </ol>
+  </nav>
+  
+</section>
+
+    <div class="mx-12 md:mx-60 pt-8 pb-80">
+    <h1 class="text-2xl">Motto</h1>
+    <p class="pt-4 italic">
+        "Kesembuhan Anda Adalah Prioritas Kami"
+    </p>
+    <h1 class="text-2xl pt-12">Visi</h1>
+    <p class="pt-4">"Menjadikan rumah sakit unggulan di Ogan Ilir yang memberikan pelayanan prima, berkuallitas, serta menjadi pilihan masyarakat"</p>
+    <h1 class="text-2xl pt-12">Misi</h1>
+    <ul class="list-disc list-inside mt-4 space-y-2">
+        <li class="text-gray-700">Memberikan pelayanan prima, aman, bermutu bagi masyarakat.</li>
+        <li class="text-gray-700">Menyelenggarakan pelayanan rujukan yang berfungsi sebagai pusat rujukan lanjutan bagi masyarakat ogan ilir.</li>
+        <li class="text-gray-700">Mengembangkan SDM yang profesional serta sarana dan prasarana yang berkualitas.</li>
+        <li class="text-gray-700">Mengembangkan pendidikan dan pelatihan yang bertujuan untuk meningkatkan kualitas pelayanan dan kesejahteraan pegawai.</li>
+    </div>
+  </section>
+ <!-- footer -->
+ <footer class="bg-teal-600 dark:bg-gray-900 mb-14 md:mb-0">
+    
+    <div class="mx-auto w-full lg:max-w-screen-xl lg:py-8">
+        <!-- layanan Telepon -->
+        <div class="lg:px-52 py-6 shadow-md bg-center bg-cover lg:items-center lg:rounded-2xl mb-10" style="background-image: url(/assets/img/bgteleponsection.jpg)">
+            <div class="lg:flex lg:items-center lg:justify-center mb-8">
+            <div class="items-center justify-center rounded-lg bg-white opacity-80 px-4 py-2 w-fit mx-auto">
+                <h1 class="text-center font-bold text-teal-700">RS Ar-Royyan</h1>
+                <h1 class="text-center font-bold text-teal-700">APPOINTMENT CENTER</h1>
+            </div>
+                <div class="flex w-fit mx-auto gap-4 rounded-full items-center justify-center p-4 bg-teal-300 my-2 border-2 border-teal-400">
+                    <div class="w-6 h-6">
+                    <img src="/assets/img/telephone-svgrepo-com.svg" class="object-cover justify-between" alt="">
+                    </img>
+                </div>
+                    <span class="text-lg text-teal-700 font-extrabold" id="phoneNumber">0711-1231212</span>
+                    <button id="copyButton"
+                            class="bg-teal-500 hover:opacity-50 text-white font-bold py-1 px-2 rounded text-xs">Copy</button>
+        
+                </div>        
+        </div>
+        <div class="bg-white opacity-90 w-fit justify-center items-center mx-auto px-2 rounded-lg">
+            <p class="text-xs text-gray-700 text-center mt-2 lg:block">Jam Operasional Layanan Telepon 06.00-22.00 WIB</p>
+        </div>
+        </div>
+        <div class="md:flex md:justify-between md:px-12 lg:px-0 p-6">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="/assets/img/LOGOPUTIH240x60px.svg" class="h-12 me-3" alt="RSAR Logo" />
+              </a>
+              <div class="md:w-80">
+                <h1 class="text-white pt-4">Jl. Indralaya Raya, Timbangan, Kecamatan Indralaya Utara, Kabupaten Ogan Ilir, Sumatera Selatan 30862</h1>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div class="text-white">
+                  <h2 class="mb-6 text-sm font-semibold uppercase text-white">Layanan</h2>
+                  <ul class="text-white dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-teal-300">IGD 24 Jam</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline hover:text-teal-300">POLI</a>
+                      </li>
+                      
+                  </ul>
+                  
+              </div>
+              
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase">Legal</h2>
+                  <ul class="text-white dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline hover:text-teal-300">Privacy Policy</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline hover:text-teal-300">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+                  
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Bergabung</h2>
+                <ul class="text-white dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline hover:text-teal-300">Karir</a>
+                    </li>
+                </ul>
+            </div>
+              <!-- sosial media -->
+              <div class="flex flex-wrap gap-6  ">
+                <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer">
+                    
+                <a href="#" class="text-blue-600 dark:hover:text-white text-center items-center justify-center object-cover">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                          <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                      </svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+            </div> 
+            <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer"> 
+                <a href="" class="text-green-400  items-center justify-center object-cover">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"> <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    <span class="sr-only">WhatsApp</span>
+                </a>   
+            </div>   
+            <div class="flex w-8 h-8 bg-white items-center justify-center rounded-full hover:bg-teal-300 cursor-pointer"> 
+                <a href="" class="text-gray-600 items-center justify-center object-cover">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.343 3.608 1.318.975.975 1.256 2.243 1.318 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.343 2.633-1.318 3.608-.975.975-2.243 1.256-3.608 1.318-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.343-3.608-1.318-.975-.975-1.256-2.243-1.318-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.343-2.633 1.318-3.608.975-.975 2.243-1.256 3.608-1.318 1.266-.058 1.646-.07 4.85-.07m0-2.163c-3.259 0-3.667.012-4.947.072-1.306.062-2.781.334-3.789 1.342C2.499 3.581 2.227 5.056 2.165 6.362 2.105 7.642 2.093 8.05 2.093 11.31s.012 3.667.072 4.947c.062 1.306.334 2.781 1.342 3.789.997.998 2.471 1.28 3.789 1.342 1.28.06 1.688.072 4.947.072s3.667-.012 4.947-.072c1.306-.062 2.781-.334 3.789-1.342.998-.997 1.28-2.471 1.342-3.789.06-1.28.072-1.688.072-4.947s-.012-3.667-.072-4.947c-.062-1.306-.334-2.781-1.342-3.789-.997-.998-2.471-1.28-3.789-1.342-1.28-.06-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.154a3.992 3.992 0 1 1 0-7.984 3.992 3.992 0 0 1 0 7.984zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/>
+                  </svg>
+                  <span class="sr-only">Instagram</span>
+                </a>   
+              </div>                    
+            </div>
+          </div>
+      </div>
+      <hr class="my-6 border-white sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="mx-auto items-center justify-center text-center pb-6 md:pb-0">
+        <span class="text-sm text-white dark:text-gray-400">© 2024 <a href="#" class="hover:underline">RS Ar-Royyan</a>. All Rights Reserved.
+        </span>
+        
+    </div>    
+    </div>
+    
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="script.js"></script>   
+</body>
+</html>

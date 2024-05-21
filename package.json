@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "flowbite": "^2.3.0",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "name": "websitersar",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "tailwindcss -i src/input.css -o src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
